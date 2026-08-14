@@ -1,4 +1,7 @@
-# Licencia del Proyecto
+# LICENCIA
+
+---
+---
 
 Copyright, 2026 © Julio Adrián Amador Salinas. Todos los derechos reservados, salvo los expresamente concedidos en esta licencia.
 
