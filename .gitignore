@@ -1,0 +1,15 @@
+# Entornos virtuales
+venv/
+env/
+.venv/
+
+# Cache de Python
+__pycache__/
+*.pyc
+
+# Archivos temporales de Word
+~$*.docx
+
+# Carpetas de configuración
+.vscode/
+.idea/
