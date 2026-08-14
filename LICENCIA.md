@@ -1,13 +1,10 @@
 # LICENCIA
 
----
----
-
 Copyright, 2026 © Julio Adrián Amador Salinas. Todos los derechos reservados, salvo los expresamente concedidos en esta licencia.
 
-## 1. Alcance de la Licencia
+## 1. Alcance
 
-Salvo que se indique expresamente lo contrario, todo el contenido de este repositorio —incluyendo la aplicación web en Streamlit (`app_amparo_lmtrC.py`), la plantilla en Microsoft Word (`amparo_template_clean.docx`), scripts de procesamiento XML, documentación, guías de instalación y materiales asociados— se distribuye bajo la licencia **Creative Commons Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0)**.
+Salvo que se indique expresamente lo contrario, todo el contenido de este repositorio —incluyendo la aplicación web en Streamlit (`app_amparo_lmtr.py`), la plantilla en Microsoft Word (`amparo_template_clean.docx`), scripts de procesamiento XML, documentación, guías de instalación y materiales asociados— se distribuye bajo la licencia **Creative Commons Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0)**.
 
 Esto significa que cualquier persona o entidad tiene la libertad de usar, copiar, redistribuir, transformar, adaptar y construir sobre este material para cualquier propósito, **incluyendo fines comerciales y profesionales**, siempre que se cumplan las siguientes condiciones:
 
