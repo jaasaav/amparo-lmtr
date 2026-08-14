@@ -37,7 +37,7 @@ Cuando compartas, redistribuyas o publiques una versión adaptada de este softwa
 **Licencia:** Creative Commons Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0).
 
 Cita sugerida:
-> Amador Salinas, Julio Adrián. *Generador de Demanda de Amparo Indirecto contra la LMTR - Registro de línea telefónica. GitHub, 2026. Disponible en: https://github.com/jaasaav/amparo-lmtr.
+> JAAS. _Generador de Demanda de Amparo Indirecto contra la LMTR - Registro de línea telefónica_. GitHub, 2026. Disponible en el siguiente enlace: https://github.com/jaasaav/amparo-lmtr.
 
 ## Exclusión
 
@@ -46,7 +46,7 @@ Este código fuente, la interfaz de usuario, las funciones de procesamiento `.do
 ## Limitación de responsabilidad
 
 - **No constituye asesoría jurídica automática:** El uso de este generador no sustituye el criterio, revisión y validación estricta de un profesional del derecho antes de presentar la demanda ante el Poder Judicial de la Federación.
-- **Responsabilidad del usuario:** El autor no será responsable por desechamientos, prevenciones, sobreseimientos, extemporaneidades o decisiones描 jurisdiccionales adversas derivadas del uso, omisión o mala interpretación de los documentos generados por este software.
+- **Responsabilidad del usuario:** El autor no será responsable por desechamientos, prevenciones, sobreseimientos, extemporaneidades o decisiones jurisdiccionales adversas derivadas del uso, omisión o mala interpretación de los documentos generados por este software.
 
 ## Texto legal CC
 
