@@ -42,7 +42,7 @@ Toda obra derivada, bifurcación (*fork*), despliegue público o redistribución
 * **Proyecto:** Generador de Demanda de Amparo Indirecto contra la LMTR
 * **Repositorio Base:** [https://github.com/jaasaav/amparo-lmtr](https://github.com/jaasaav/amparo-lmtr)
 * **Licencia:** Creative Commons Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0)
-Cita sugerida:
+* Cita sugerida:
 > Amador, Julio. _Generador de Demanda de Amparo Indirecto contra la LMTR - Registro de línea telefónica_. GitHub, 2026. Disponible en el siguiente enlace: https://github.com/jaasaav/amparo-lmtr.
 ---
 
