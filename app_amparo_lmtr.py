@@ -1087,18 +1087,82 @@ with tab7:
     col_inst, col_lic = st.columns(2)
     
     with col_inst:
-        st.subheader("💻 Instalación local")
-        st.code("""
-# 1. Clonar el repositorio
-git clone https://github.com/jaasaav/amparo-lmtr.git
-cd amparo-lmtr
+        st.subheader("💻 Guía de Instalación Local (Paso a Paso)")
+        st.markdown("""
+        Esta guía permite a cualquier persona ejecutar el generador en su computadora de forma local y privada, **sin necesidad de tener experiencia previa en programación ni herramientas técnicas avanzadas instaladas**.
+        """)
 
-# 2. Instalar dependencias
+        # --- PASO 0: INSTALACIÓN DE PYTHON ---
+        st.markdown("#### Paso 0: Instalar Python en tu computadora (Prerrequisito)")
+        st.markdown("""
+        Si aún no tienes Python en tu equipo:
+        1. Descárgalo gratuitamente desde su página oficial: [python.org/downloads](https://www.python.org/downloads/).
+        2. **Paso crítico en Windows:** Al abrir el instalador, marca la casilla **`[✔] Add Python to PATH`** (o *Agregar Python al PATH*) antes de presionar *Install Now*.
+        """)
+
+        st.markdown("---")
+
+        # --- PASO 1: DESCARGAR ARCHIVOS ---
+        st.markdown("#### Paso 1: Obtener los archivos del proyecto")
+        
+        tab_zip, tab_git = st.tabs([
+            "📦 Opción A: Descarga directa en ZIP (Recomendada para principiantes)", 
+            "🐙 Opción B: Clonar con Git (Para desarrolladores)"
+        ])
+        
+        with tab_zip:
+            st.markdown("""
+            1. Descarga la carpeta comprimida del proyecto haciendo clic en este enlace directo:  
+               👉 **[Descargar amparo-lmtr.zip desde GitHub](https://github.com/jaasaav/amparo-lmtr/archive/refs/heads/main.zip)**
+            2. Ve a tu carpeta de *Descargas*, haz clic derecho sobre el archivo `amparo-lmtr-main.zip` y elige **"Extraer todo..."**.
+            3. Entra a la carpeta descomprimida.
+            4. **Abrir la terminal dentro de esa carpeta:**
+               * **En Windows:** En la barra de direcciones de la carpeta (donde se ve la ruta), escribe `powershell` y presiona la tecla *Enter*.
+               * **En macOS / Linux:** Abre la aplicación *Terminal*, escribe `cd ` (con un espacio al final), arrastra la carpeta descomprimida dentro de la ventana y presiona *Enter*.
+            """)
+
+        with tab_git:
+            st.markdown("Si ya cuentas con Git instalado en tu sistema operativo, ejecuta:")
+            st.code("""git clone https://github.com/jaasaav/amparo-lmtr.git\ncd amparo-lmtr""", language="bash")
+
+        st.markdown("---")
+
+        # --- PASO 2: CREAR ENTORNO VIRTUAL ---
+        st.markdown("#### Paso 2: Crear y activar un entorno virtual")
+        st.caption("El entorno virtual crea un espacio aislado para que las librerías del generador no interfieran con otros programas.")
+
+        tab_win_env, tab_mac_env = st.tabs(["🪟 En Windows (PowerShell)", "🍎 En macOS / 🐧 Linux"])
+        
+        with tab_win_env:
+            st.code("""# 1. Crear la carpeta del entorno virtual
+python -m venv venv
+
+# 2. Habilitar permisos de ejecución de scripts
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
+# 3. Activar el entorno virtual
+.\\venv\\Scripts\\Activate.ps1""", language="powershell")
+
+        with tab_mac_env:
+            st.code("""# 1. Crear el entorno virtual
+python3 -m venv venv
+
+# 2. Activar el entorno virtual
+source venv/bin/activate""", language="bash")
+
+        st.markdown("---")
+
+        # --- PASO 3 Y 4: INSTALAR DEPENDENCIAS Y EJECUTAR ---
+        st.markdown("#### Paso 3: Instalar las dependencias e iniciar el sistema")
+        st.caption("Una vez activo el entorno (aparecerá `(venv)` al inicio de la terminal), escribe los siguientes dos comandos:")
+        
+        st.code("""# A. Instalar Streamlit y el manipulador de Word
 pip install -r requirements.txt
 
-# 3. Ejecutar la app
-streamlit run app.py
-        """, language="bash")
+# B. Iniciar la aplicación web en tu navegador
+streamlit run app.py""", language="bash")
+        
+        st.success("🎉 **¡Listo!** El sistema abrirá automáticamente una pestaña en tu navegador web en la dirección `http://localhost:8501` con la aplicación lista para usarse.")
 
     with col_lic:
         st.subheader("📄 Licencia y condiciones de uso")
