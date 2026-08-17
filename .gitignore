@@ -1,15 +1,24 @@
-# Entornos virtuales
+# Entornos virtuales de Python
 venv/
-env/
 .venv/
+env/
+ENV/
 
-# Cache de Python
+# Archivos de compilación de Python
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+*.pyo
 
-# Archivos temporales de Word
-~$*.docx
+# Configuraciones y credenciales locales de Streamlit
+.streamlit/secrets.toml
 
-# Carpetas de configuración
-.vscode/
-.idea/
+# Excluir documentos de prueba generados (preservando la plantilla base)
+Amparo*.docx
+*.tmp
+!amparo_template_clean.docx
+
+# Archivos ocultos del sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
