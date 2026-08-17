@@ -41,7 +41,7 @@
 
 ```bash
 pip install -r requirements.txt
-streamlit run app.py --server.port 8501
+streamlit run app_amparo_lmtr --server.port 8501
 
 ```
 
