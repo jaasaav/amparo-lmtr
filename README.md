@@ -61,7 +61,7 @@ Abra `http://localhost:8501` en su navegador web.
 
 ## Competencia
 
-Juzgado de Distrito en materia de Acceso a la Información Pública y Protección de Datos Personales con residencia en Aguascalientes, Ags. (Acuerdo General 8/2025 y Contradicción de Tesis 37/2019 de la SCJN).
+Juzgado de Distrito en materia de Acceso a la Información Pública y Protección de Datos Personales con residencia en Aguascalientes, Ags. (Acuerdo General 8/2025 y Contradicción de Tesis 37/2019 de la SCJN). Tema que esta abierto a discusión para mejorar la admisión y suspensión.
 
 ## Créditos y autoría
 
