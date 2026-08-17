@@ -1,0 +1,32 @@
+# Guía de Contribución al Proyecto Amparo LMTR
+
+¡Gracias por tu interés en contribuir a este proyecto de defensa de derechos digitales! Este espacio busca construir un puente colaborativo entre la comunidad legal y técnica.
+
+---
+
+## Áreas de Contribución Abiertas
+
+### 1. Academia y Organizaciones Civiles (ONGs)
+* Incorporación de estudios empíricos, datos de impacto social y brecha digital.
+* Documentación de estándares internacionales de derechos humanos (Corte IDH, ONU, CIDH).
+
+### 2. Profesionales del Derecho (Abogados y Litigantes)
+* **Actualización jurisprudencial:** Registro de nuevas suspensiones provisionales/definitivas obtenidas en juzgados federales.
+* **Técnica procesal:** Perfeccionamiento de la redacción en capítulos de suspensión, procedencia y suplencia de la queja.
+* **Monitoreo normativo:** Alertas sobre modificaciones a lineamientos de telecomunicaciones o avisos de privacidad corporativos.
+
+### 3. Desarrolladores y Especialistas en Tecnología
+* **Refactorización de código:** Mejoras en la manipulación de documentos `.docx` y preservación de estilos OpenXML.
+* **Validación de datos:** Expresiones regulares para control estricto de entradas de texto y fechas judiciales.
+* **Seguridad y privacidad:** Garantizar que todo el procesamiento se mantenga local y transparente.
+
+---
+
+## Flujo para Enviar un Pull Request (PR)
+
+1. **Bifurcar (Fork):** Crea una copia del repositorio en tu perfil de GitHub.
+2. **Crear una rama:** 
+   ```bash
+   git checkout -b mejora/nueva-jurisprudencia
+   # o bien:
+   git checkout -b fix/procesamiento-word
