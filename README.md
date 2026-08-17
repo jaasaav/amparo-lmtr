@@ -51,7 +51,7 @@ Abra `http://localhost:8501` en su navegador web.
 
 | Archivo | Descripción |
 | --- | --- |
-| `app.py` | Aplicación principal de Streamlit (v1.0) |
+| `app_amparo_lmtr.py` | Aplicación principal de Streamlit (v1.0) |
 | `amparo_template_clean.docx` | Plantilla Word optimizada y limpia de metadatos o comentarios |
 | `requirements.txt` | Dependencias del proyecto (`streamlit`, `python-docx`) |
 | `LICENCIA.md` | Términos de la licencia CC BY-SA 4.0 y excepciones profesionales |
