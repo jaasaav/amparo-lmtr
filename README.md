@@ -50,12 +50,14 @@ Abra `http://localhost:8501` en su navegador web.
 ## Archivos del proyecto
 
 | Archivo | Descripción |
-| --- | --- |
-| `app_amparo_lmtr.py` | Aplicación principal de Streamlit (v1.0) |
+|---|---|
+| `app.py` | Aplicación principal de Streamlit (v1.0) |
 | `amparo_template_clean.docx` | Plantilla Word optimizada y limpia de metadatos o comentarios |
 | `requirements.txt` | Dependencias del proyecto (`streamlit`, `python-docx`) |
+| `.gitignore` | Reglas de exclusión de archivos temporales, entornos virtuales y caché para Git |
 | `LICENCIA.md` | Términos de la licencia CC BY-SA 4.0 y excepciones profesionales |
 | `CONTRIBUTING.md` | Guía para la colaboración abierta y envío de mejoras |
+| `README.md` | Documentación principal, guía de instalación y manual del proyecto |
 
 ## Competencia
 
