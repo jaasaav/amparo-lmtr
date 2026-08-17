@@ -70,6 +70,8 @@ Juzgado de Distrito en materia de Acceso a la Información Pública y Protecció
 
 
 
-## Aviso legal
+## Aviso legal y Licencia
 
 Herramienta de apoyo técnico e informático. Se recomienda la revisión y validación final por un abogado postulante autorizado antes de la presentación formal del escrito ante los órganos jurisdiccionales federales.
+
+El uso de este proyecto se rige bajo los términos de la licencia **CC BY-SA 4.0** con restricciones específicas de uso profesional y político. Para conocer los términos completos de uso, las exclusiones de garantía y las limitaciones de responsabilidad, consulta directamente el archivo de [LICENCIA.md](LICENCIA.md).
