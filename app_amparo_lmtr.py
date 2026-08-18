@@ -1,8 +1,8 @@
 """
 ================================================================================
 PROYECTO: Generador de Demanda de Amparo Indirecto contra la LMTR
-VERSIÓN: 1.0
-FECHA: Agosto 2026
+VERSIÓN: 1.01
+FECHA: 18/agosto/26
 LICENCIA: Creative Commons Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0)
 
 DESCRIPCIÓN GENERAL:
@@ -20,6 +20,12 @@ CRÉDITOS Y DESARROLLO:
 Diseñado y desarrollado bajo las instrucciones, dirección jurídica y supervisión 
 estricta de Julio Amador, en colaboración y asistencia técnica de modelos de 
 lenguaje (Gemini, Gemini Notebook y Grok).
+
+ACTUALIZACIÓNES:
+1.01 18/ago/26
+- Modificación al texto del WARNING (AVISO IMPORTANTE).
+- Modificación al texto de la pregunta 5. de los FAQs.
+- Modificación al texto a los escenarios de respuesta que podemos esperar de los juzgados.
 ================================================================================
 """
 
@@ -457,8 +463,9 @@ st.caption("LMTR + Lineamientos de Identificación de Líneas Telefónicas Móvi
 
 st.warning("""
 **AVISO IMPORTANTE**  
-Esta es una herramienta de apoyo, **no sustituye la asesoría profesional de un abogado**.  
-El documento generado debe ser **revisado y validado** por un profesional del derecho antes de presentarse.
+* Esta es una herramienta de apoyo, **no sustituye la asesoría profesional de un abogado**.  
+* El documento generado debe ser **revisado y validado** por un profesional del derecho antes de presentarse.
+* Lee la pestaña **7. Guía y FAQs** antes de utilizar la app.
 """)
 
 tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs([
@@ -1050,12 +1057,18 @@ with tab7:
           Vincular forzosamente tu identidad a la línea celular te expone a riesgos de seguridad. Si un tercero realiza ***spoofing*** (enmascaramiento o clonación del identificador de llamada) para efectuar llamadas de extorsión usando tu número, el padrón te señalará automáticamente como el titular del acto delictivo. Al estar catalogada la extorsión en el **artículo 19 constitucional como delito con Prisión Preventiva Oficiosa**, un usuario inocente corre el riesgo de enfrentar una privación automática de su libertad antes de que la autoridad investigue si la línea fue alterada técnicamente.
         """)
 
-    with st.expander("5. ¿Los datos proporcionados en el script y la plantilla son seguros?"):
+    with st.expander("5. ¿Los datos proporcionados en la aplicación son privados y seguros?"):
         st.write("""
-        **Sí, la privacidad es absoluta por diseño técnico:**
-        * **Procesamiento 100% Local:** El código corre en la memoria caché local de tu navegador web. Nada es guardado en servidores externos, nubes ni enviado por e-mail.
-        * **GitHub y Licencia CC BY-SA 4.0:** Proyecto alojado de forma pública para asegurar la transparencia auditada de su código.
-        * **Opción de datos genéricos:** Si sientes desconfianza, puedes rellenar el formulario con datos de prueba (ej. "JUAN PÉREZ" y "5512345678"), generar el `.docx` limpio y modificarlo de forma segura en tu computadora usando cualquier editor de texto (Word, Google Docs, LibreOffice Writer, WPS Writer, ONLYOFFICE y FreeOffice).
+        **Sí, la aplicación opera bajo principios de mínima recopilación y procesamiento:**
+        
+        * **En la versión Web en la nube (`streamlit.app`):**  
+          Los datos ingresados se transmiten de forma cifrada (vía WebSockets con cifrado TLS/HTTPS) a la memoria RAM temporal del servidor para rellenar la plantilla y devolverte el archivo `.docx`. **El sistema no tiene bases de datos, no guarda archivos en disco.** Al cerrar o reiniciar la sesión, los datos se eliminan de la memoria, para mayor referencia, revisar el siguiente [hilo](https://discuss.streamlit.io/t/storing-data-from-users/42346).
+
+        * **En la versión local (Máxima privacidad):**  
+          Si prefieres que ningún dato viaje por la red, puedes clonar o descargar el repositorio y ejecutar la app en tu propia computadora (`localhost`). Todo el procesamiento se mantendrá 100% aislado dentro de tu máquina.
+
+        * **Uso de datos genéricos:**  
+          Podras utilizar el botón de **Cargar datos genéricos de prueba** (en desarrollo). Por el momento ingresarlos manualmente (`JUAN N N`, `MARIA N`, etc.) en la versión web para generar la demanda base y colocar tus datos reales de manera segura directamente en el procesador de texto (Word, LibreOffice, etc.) en tu computadora.
         """)
 
     with st.expander("6. ¿Cómo puedo conseguir la plantilla y el script?"):
@@ -1075,7 +1088,8 @@ with tab7:
     st.markdown("""
     * **Admisión y suspensión provisional:** El escenario idóneo. El Juez admite a trámite la demanda, abre el incidente de suspensión por separado y concede la suspensión provisional para que la telefónica no corte la línea. Una vez que tengas el auto, deberás notificar inmediatamente al operador con la resolución firmada digitalmente por el Juez.
     * **Prevención:** El Juez encuentra alguna imprecisión formal o duda técnica en la demanda. Otorgará un plazo fatal de **5 días hábiles** para responder mediante escrito aclaratorio; de lo contrario, se tendrá por no presentada la demanda.
-    * **Desechamiento de plano:** El Juez se declara incompetente por razón de materia y pretende remitir de inmediato el expediente a los juzgados que, a su juicio, cuentan con competencia especializada para conocer del asunto. Por tal motivo, se incorporó un apartado específico en el capítulo de suspensión, con fundamento en el artículo 48 de la Ley de Amparo, a fin de solicitar que, antes de efectuar dicha remisión, el órgano jurisdiccional otorgue la suspensión provisional correspondiente. Lo anterior, en virtud de que existe una obligación legal de pronunciarse sobre esta medida cautelar cuando resulte procedente, garantizando desde el inicio la protección de tu derecho a la conectividad y, en su caso, la preservación de tu patrimonio, evitando que la transferencia de los autos genere una afectación irreparable o de difícil reparación.
+    * **Desechamiento de plano:** Ocurre si el Juez considera que se actualiza una causa manifiesta e indudable de improcedencia (por ejemplo, estimar que no hay acto de autoridad o que la presentación es extemporánea). Este auto no concluye el asunto definitivamente, debe combatirse de inmediato mediante un recurso de queja (art. 97, fracción I, inciso a) de la Ley de Amparo) ante un Tribunal Colegiado de Circuito.
+    * **Declinatoria de competencia por materia:** El Juez se declara incompetente por razón de materia y pretende remitir de inmediato el expediente a los juzgados que, a su juicio, cuentan con competencia especializada para conocer del asunto. Por tal motivo, se incorporó un apartado específico en el capítulo de suspensión, con fundamento en el artículo 48 de la Ley de Amparo, a fin de solicitar que, antes de efectuar dicha remisión, el órgano jurisdiccional otorgue la suspensión provisional correspondiente. Lo anterior, en virtud de que existe una obligación legal de pronunciarse sobre esta medida cautelar cuando resulte procedente, garantizando desde el inicio la protección de tu derecho a la conectividad y, en su caso, la preservación de tu patrimonio, evitando que la transferencia de los autos genere una afectación irreparable o de difícil reparación.
     
     ---
     **⚠️ Conclusión Procesal:** Debido a estos escenarios y plazos fatales de días hábiles para responder o interponer recursos de queja inmediatos, es de vital importancia contar con la asesoría y representación de un abogado habilitado en el expediente para dar el debido seguimiento procesal a tu juicio.
